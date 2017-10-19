@@ -1,0 +1,47 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>Contact Form</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	</head>
+	<body>				
+	
+	<div id="contactMessage"></div>
+	
+	<form method="post" name="form1" id="formContact">
+		<h1></h2>
+		<h2>Send Me a message</h2>
+
+		Your Name:<br />
+		<input name="name" type="text" class="form-control" id="name" />
+		<br />
+		<br />
+
+		Your e-mail:<br />
+		<input name="from" type="text" id="from" class="form-control" />
+		<br />
+		<br />
+
+		Subject:<br />
+		<input name="subject" type="text" id="subject" class="form-control" />
+		<br />
+		<br />
+
+		<img src="php/verificationimage.php?<?php echo rand(0,9999);?>" alt="verification image, type it in the box" width="90" height="45" align="absbottom" /><br />
+		<p><i class="glyphicon glyphicon-hand-up"></i> Type verification image:</p>
+		<input name="verif_box" type="text" id="verif_box" class="form-control"  />
+		<br />
+
+
+		<p><i class="glyphicon glyphicon-comment"></i> Message:</p>
+		<textarea name="message" cols="6" rows="5" id="message" class="form-control" rows="3"></textarea>
+		<br />
+		<input name="Submit" type="submit" class="btn" value="Send Message"/>
+	</form>
+	
+	<script src="js/contactFormInput.js"></script>
+
+	</body>
+</html>
